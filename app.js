@@ -14,4 +14,4 @@ app.get('/balance', function(req, res, next) {
   res.send(third.accountBalance() + third.randomNum());
 });
 
-app.listen(3000);
+app.listen(process.env.PORT || 3000);
